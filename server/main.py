@@ -21,3 +21,10 @@ class User(BaseModel):
 @app.get("/")
 def home():
     return {"message": "FastAPI backend is running!"}
+
+@app.get("/api/users")
+def get_users():
+    return [
+        {"id": 1, "name": "Ujjwal"},
+        {"id": 2, "name": "Rahul"},
+    ]
