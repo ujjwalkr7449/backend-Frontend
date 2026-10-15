@@ -28,3 +28,11 @@ def get_users():
         {"id": 1, "name": "Ujjwal"},
         {"id": 2, "name": "Rahul"},
     ]
+
+
+@app.get("/api/users")
+def get_users():
+    return [
+        {"id": 1, "name": "Ujjwal"},
+        {"id": 2, "name": "Rahul"},
+    ]
