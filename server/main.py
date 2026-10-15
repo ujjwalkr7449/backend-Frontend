@@ -15,3 +15,9 @@ app.add_middleware(
 
 class User(BaseModel):
     name: str
+  
+  
+#default api route    
+@app.get("/")
+def home():
+    return {"message": "FastAPI backend is running!"}
